@@ -14,6 +14,11 @@ SPISettings settingsA(4000000, MSBFIRST, SPI_MODE0);  // define SPI settings; li
 #define max _max
 #endif
 
+#ifdef ESP32
+#define min _min
+#define max _max
+#endif
+
 /////////////////////////////////////////////////////
 //
 // PUBLIC
@@ -31,7 +36,7 @@ MS5607::MS5607(uint8_t CSn, bool InvertCS)
   else
   {
     CS_OFF = HIGH;
-    CS_ON = ON;
+    CS_ON = LOW;
   }
   //digitalWrite(_cspin, HIGH);
   digitalWrite(_cspin, CS_OFF);

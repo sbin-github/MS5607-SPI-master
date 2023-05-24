@@ -22,7 +22,7 @@
 class MS5607
 {
 public:
-  explicit        MS5607(uint8_t CSpin);
+  explicit        MS5607(uint8_t CSpin, bool InvertCSSignal);
 
   void            init();
   int             read(uint8_t bits = 8);
