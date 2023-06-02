@@ -15,7 +15,7 @@
 #include <Arduino.h>
 #endif
 
-#define MS5607_LIB_VERSION (F("0.1.9"))
+#define MS5607_LIB_VERSION (F("0.1.0"))
 
 #define MS5607_READ_OK  0
 
