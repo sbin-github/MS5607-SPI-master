@@ -1,8 +1,7 @@
 #include "MS5607.h"
 #include <SPI.h>
 
-#define ADDR 15       // Address when using I2C,
-                      // CS (CSB) pin when using SPI (Arduino numbering)
+#define ADDR 15   // CS (CSB) pin when using SPI (Arduino numbering)
 
 // MS5607(CS_PIN, INV_CS_SIGNAL)
 MS5607 MS5607(ADDR, 0);
